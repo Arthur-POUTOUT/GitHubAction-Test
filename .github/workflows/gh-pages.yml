@@ -19,15 +19,15 @@ jobs:
         node-version: 16
 
     - name: Install dependencies
+      working-directory: ./hello-world
       run: npm install
 
-    - name: Run tests
-      run: npm run test:headless
-
     - name: Build
+      working-directory: ./hello-world
       run: npm run build:prod
 
     - name: Deploy
+      working-directory: ./hello-world
       if: success()
       uses: peaceiris/actions-gh-pages@v3
       with:
