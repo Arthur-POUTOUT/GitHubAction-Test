@@ -1,3 +1,4 @@
+name: Karma Tests
 # Run on Pull Request to $branch only
 on:
   pull_request:
