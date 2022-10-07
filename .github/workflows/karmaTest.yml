@@ -12,6 +12,11 @@ jobs:
     - uses: actions/setup-node@v1 #Setup Node
       with:
         node-version: '16'
+        
+    - name: Go directory
+      run :
+        cd hello-world/
+        
     - name: Run Karma Tests
       run: |
         npm install
