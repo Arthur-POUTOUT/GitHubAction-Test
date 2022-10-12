@@ -21,5 +21,6 @@ jobs:
       - name: Commit and Push new README.md to the repository
         working-directory: ./hello-world
         run: |
+          git fetch
           git checkout gh-pages 
           git checkout main /hello-world/dist/
