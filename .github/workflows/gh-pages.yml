@@ -19,4 +19,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: releases/v4
           folder: ./hello-world # The folder the action should deploy.
