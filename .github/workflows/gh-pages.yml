@@ -23,4 +23,4 @@ jobs:
         run: |
           git fetch
           git checkout gh-pages 
-          git checkout main /hello-world/dist/
+          git checkout main ./hello-world/dist/
